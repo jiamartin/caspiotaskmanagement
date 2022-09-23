@@ -4,6 +4,10 @@
     padding: 0 0 !important;
 }
 
+.navbar{
+    padding: 0 50% ;
+}
+
 .col{
     margin: auto !important;
 }
