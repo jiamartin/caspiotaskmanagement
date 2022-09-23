@@ -27,5 +27,17 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function hideDP() {
+          const authForms = document.getElementsByClassName('cbAuthBox');
+          Array.prototype.forEach.call(authForms, function (authForm, index) {
+            if (index > 0) { // Skip the first DP
+              authForm.style.display = 'none'; // and hide the rest
+            }
+          });
+        }
+        document.addEventListener('DataPageReady', hideDP);
+        </script>
   </body>
 </html>
